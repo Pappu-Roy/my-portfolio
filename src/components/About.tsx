@@ -7,7 +7,7 @@ import {
   SiPhp, SiLaravel, SiVuedotjs, SiMysql, SiBootstrap,
   SiC, SiCplusplus, SiPython
 } from "react-icons/si";
-import { FaJava } from "react-icons/fa"; // Java এর জন্য FontAwesome আইকন
+import { FaJava } from "react-icons/fa";
 
 // TypeScript Interfaces
 interface Skill {
@@ -21,7 +21,6 @@ interface Stat {
   label: string;
 }
 
-// আপনার সম্পূর্ণ স্কিল সেট
 const skills: Skill[] = [
   { name: "Next.js", icon: SiNextdotjs, color: "text-black dark:text-white" },
   { name: "React", icon: SiReact, color: "text-cyan-400" },
@@ -89,7 +88,7 @@ export default function About() {
           </div>
         </motion.div>
 
-        {/* Right - Skills Grid (Updated for more items) */}
+        {/* Right - Skills Grid */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}

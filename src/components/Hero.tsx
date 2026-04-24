@@ -5,10 +5,10 @@ import Typewriter from 'typewriter-effect';
 import { motion } from "framer-motion";
 
 const socials = [
-  { icon: FaFacebookF, href: "#" },
+  { icon: FaFacebookF, href: "https://web.facebook.com/likerboypappu.roy/" },
+  { icon: FaLinkedinIn, href: "https://www.linkedin.com/in/pappu-roy-6526192a1/" },
+  { icon: FaGithub, href: "https://github.com/Pappu-Roy" },
   { icon: FaTwitter, href: "#" },
-  { icon: FaLinkedinIn, href: "#" },
-  { icon: FaGithub, href: "#" },
 ];
 
 const stats = [
@@ -80,7 +80,7 @@ export default function Hero() {
           >
             <div className="relative w-[320px] h-[400px] rounded-[40px] overflow-hidden bg-transparent">
               <Image
-                src="/profile.png" // Make sure this is your transparent PNG file
+                src="/profile.png"
                 alt="Pappu Roy"
                 fill
                 className="object-cover rounded-[40px] bg-transparent"
@@ -155,6 +155,8 @@ export default function Hero() {
               <motion.a
                 key={i}
                 href={href}
+                target="_blank"           
+                rel="noopener noreferrer" 
                 whileHover={{ y: -3, scale: 1.1 }}
                 className="p-3 border border-primary/40 text-primary rounded-xl hover:bg-primary hover:text-white hover:border-primary transition-all duration-200 cursor-pointer"
               >
